@@ -21,9 +21,14 @@
                accept='image/*'
                onchange='showPicked(this)'>
       </div>
-      <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
+      
+      <form action="/action_page.php">
+  Text input: <input type="text" name="usrname"><br>
+  <input class='choose-file-button' type="submit" value="Submit" onclick='showPicker()'>
+</form>
+
       <div class='upload-label'>
-        <label id='upload-label'>No file chosen</label>
+        <label id='upload-label'>No text</label>
       </div>
       <div>
         <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
