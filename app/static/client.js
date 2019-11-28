@@ -14,13 +14,13 @@ function analyze() {
       var response = JSON.parse(e.target.responseText);
       if (response["result"] == "1") {
         el("result-label").innerHTML = `This text is okay`;
-      } else if (response["result"] == "0") {
-        el("result-label").innerHTML = `This text is good`;
-      } else if (response["result"] == "2") {
-        el("result-label").innerHTML = `This text is bad`;
-      } else if (response["result"] == "3") {
-        el("result-label").innerHTML = `This text is evil`;
       } else if (response["result"] == "4") {
+        el("result-label").innerHTML = `This text is good`;
+      } else if (response["result"] == "3") {
+        el("result-label").innerHTML = `This text is bad`;
+      } else if (response["result"] == "2") {
+        el("result-label").innerHTML = `This text is evil`;
+      } else if (response["result"] == "0") {
         el("result-label").innerHTML = `This text is the worst`;
       } else {
         el("result-label").innerHTML = `${response["result"]}`;
